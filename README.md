@@ -8,7 +8,7 @@ Markdown files. The package requires a installation of the tcllib packages
 To support as well jpeg files the Tcl library *tkimg* should be installed.
 
 * [Manual](http://htmlpreview.github.io/?https://github.com/mittelmark/shtmlview/blob/master/shtmlview/shtmlview.html)
-* [Download](https://downgit.github.io/#/home?url=https://github.com/mittelmark/shtmlview/tree/master/shtmlview)
+* [Download](https://downgit.github.io/#/home?url=https://github.com/mittelmark/shtmlview/tree/main/shtmlview)
 
 ### Standalone Application
 
