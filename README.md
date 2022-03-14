@@ -5,7 +5,7 @@ Markdown files. The package requires a installation of the tcllib packages
 *snit* and optional *Markdown* if Markdown files should be displayed.
 To support as well jpeg files the Tcl library *tkimg* should be installed.
 
-* [Manual](http://htmlpreview.github.io/?https://github.com/mittelmark/DGTcl/blob/master/lib/shtmlview/shtmlview.html) - 
+* [Manual](http://htmlpreview.github.io/?https://github.com/mittelmark/shtmlview/blob/master/shtmlview/shtmlview.html)
 * [Download](https://downgit.github.io/#/home?url=https://github.com/mittelmark/shtmlview/tree/master/shtmlview).
 
 The file `shtmlview.tcl` can be used not only as Tcl package but as well as a
