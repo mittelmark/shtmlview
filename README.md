@@ -4,8 +4,11 @@
 
 The shtmlview package provides a pure Tcl/Tk widget to display basic HTML and
 Markdown files. The package requires a installation of the tcllib packages
-*snit* and optional *Markdown* if Markdown files should be displayed.
-To support as well jpeg files the Tcl library *tkimg* should be installed.
+*snit* and, optional, *Markdown* if Markdown files should be displayed. To
+support as well jpeg files the Tcl library *tkimg* should be installed. This
+widget is not a web browser it will not work with http(s) addresses and only
+relative filenames for images and links should be used. The widget supports as
+well base64 encoded images embedded directly into HTML pages.
 
 * [Manual](http://htmlpreview.github.io/?https://github.com/mittelmark/shtmlview/blob/master/shtmlview/shtmlview.html)
 * [Download](https://downgit.github.io/#/home?url=https://github.com/mittelmark/shtmlview/tree/main/shtmlview)
