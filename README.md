@@ -3,7 +3,7 @@
 ### Description
 
 The shtmlview package provides a pure Tcl/Tk widget to display basic HTML and
-Markdown files. The package requires a installation of the tcllib packages
+Markdown files. The package requires an installation of the tcllib packages
 *snit* and, optional, *Markdown* if Markdown files should be displayed. To
 support as well jpeg files the Tcl library *tkimg* should be installed. This
 widget is not a web browser it will not work with http(s) addresses and only
@@ -33,3 +33,11 @@ To see for more options execute `tclsh shtmlview.tcl --help` in your terminal.
 * [Wikipage on Tclers Wiki](https://wiki.tcl-lang.org/page/shtmlview)
 * [tkhtml(1)](https://github.com/wjoye/tkhtml1)
 * [tkhtml3](http://tkhtml.tcl.tk/index.html)
+
+### TODO's
+
+* [ ] svg file and inline data support using svgconvert [https://github.com/mittelmark/svgconvert/](https://github.com/mittelmark/svgconvert/) !
+* [ ] more investigations into the existing css functionality, keept it or throw it a away ?
+* [ ] removal of forms part ?
+* [ ] edit/view button to switch between view and edit mode to directly edit and save for instance a Markdown document (?)
+* [ ] help megawidget with TOC and index search such as dgHelpBrowser
