@@ -38,6 +38,6 @@ To see for more options execute `tclsh shtmlview.tcl --help` in your terminal.
 
 * [x] svg file and inline data support using svgconvert [https://github.com/mittelmark/svgconvert/](https://github.com/mittelmark/svgconvert/) !
 * [x] more investigations into the existing css functionality, keept it or throw it a away  (thrown away, we should keep it minimal)
-* [ ] removal of forms part (thrown away - no chance to implement a web browser)
-* [ ] edit/view button to switch between view and edit mode to directly edit and save for instance a Markdown document
+* [x] removal of forms part (thrown away - no chance to implement a web browser)
+* [ ] edit/view button to switch between view and edit mode to directly edit and save for instance a Markdown document should be a widget adaptor to not blow up the code
 * [ ] help megawidget with TOC and index search such as dgHelpBrowser
