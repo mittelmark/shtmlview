@@ -2,32 +2,36 @@
 
 ### Description
 
-The shtmlview package provides a pure Tcl/Tk widget to display basic HTML and
-Markdown files. The package requires an installation of the tcllib packages
-*snit* and, optional, *Markdown* if Markdown files should be displayed. To
-support as well jpeg files the Tcl library *tkimg* should be installed. This
-widget is not a web browser it will not work with http(s) addresses and only
-relative filenames for images and links should be used. The widget supports as
-well base64 encoded images embedded directly into HTML pages.
+The `shtmlview` package provides a pure Tcl/Tk widget to display basic HTML and
+Markdown files. An installation of the Tcllib package *snit* is required. To
+display Markdown files the Tcllib *Markdown* package has to be installed as
+well. The package *TkImg* is required to support the display of JPEG images.
+
+This widget is not a web browser. It will not work with http(s) addresses and
+only relative filenames for images and links should be used. The widget supports
+base64 encoded images embedded directly into HTML pages.
 
 * [Manual](http://htmlpreview.github.io/?https://github.com/mittelmark/shtmlview/blob/master/shtmlview/shtmlview.html)
-* [Download latest source](https://downgit.github.io/#/home?url=https://github.com/mittelmark/shtmlview/tree/main/shtmlview)
-* [Download Release 1.0.0](https://github.com/mittelmark/shtmlview/archive/refs/tags/v1.0.0.zip)
+* [Download](https://downgit.github.io/#/home?url=https://github.com/mittelmark/shtmlview/tree/main/shtmlview)
 
 ### Standalone Application
 
-The file `shtmlview.tcl` can be used not only as Tcl package but as well as a
-standalone application to view Markdown and HTML files directly. Here an usage
-line to display an HTML file.
+The file `shtmlview.tcl` is not only a Tcl package but also a standalone
+application for the direct viewing of Markdown and HTML files.
+
+To display a HTML file invoke it as
 
 ```
 tclsh shtmlview.tcl filename.html
 ```
-Here an image where the standalone application is used to browse the Tcl/Tk documentation:
+
+The image below is a screen shot from when the standalone application was used
+to browse the Tcl/Tk core documentation:
 
 ![Tcl manual tkcmd](img/shtmlview-tkcmd.png)
 
-To see for more options execute `tclsh shtmlview.tcl --help` in your terminal.
+Invoke `tclsh shtmlview.tcl --help` in your terminal to see the embedded
+documentation explaining more options.
 
 ### See also
 
