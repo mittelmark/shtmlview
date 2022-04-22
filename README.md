@@ -12,7 +12,8 @@ only relative filenames for images and links should be used. The widget supports
 base64 encoded images embedded directly into HTML pages.
 
 * [Manual](http://htmlpreview.github.io/?https://github.com/mittelmark/shtmlview/blob/master/shtmlview/shtmlview.html)
-* [Download](https://downgit.github.io/#/home?url=https://github.com/mittelmark/shtmlview/tree/main/shtmlview)
+* [Download Git Latest 1.1.0](https://downgit.github.io/#/home?url=https://github.com/mittelmark/shtmlview/tree/main/shtmlview)
+* [Download Git Stable 1.0.0](https://github.com/mittelmark/shtmlview/archive/refs/tags/v1.0.0.zip)
 
 ### Standalone Application
 
