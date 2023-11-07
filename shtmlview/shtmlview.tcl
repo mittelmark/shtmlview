@@ -3367,7 +3367,7 @@ namespace eval ::svgconvert {
             exec cairosvg -f [string range [string tolower [file extension $outfile]] 1 end] -o $outfile -s $scalex $infile
         }
     } elseif {[info command ::svgconvert::svgconv] eq ""}  {
-        puts stderr "Error: no svg conversion available, neither critcl and librsvg2-dev or the terminal applications rsvg-convert or cairosvg are available!\nPlease install one of the tools to support svg display!"
+        #puts stderr "Error: no svg conversion available, neither critcl and librsvg2-dev or the terminal applications rsvg-convert or cairosvg are available!\nPlease install one of the tools to support svg display!"
     }
 
     proc svg2svg {svginfile svgoutfile {scalex 1.0} {scaley 1.0}} {
@@ -3466,6 +3466,14 @@ if {[info exists argv0] && [info script] eq $argv0} {
         puts "Found $url and it was loaded"
     }
     proc usage {} {
+        set md true
+        if {[info command Markdown::convert] eq ""} {
+            set md "false - install Tcl package Markdown"
+        }
+        set svg true
+        if {[info command ::svgconvert::svgconv] eq ""} {
+            set svg "false - install rsvg-convert or cairo or Tcl package critcl and librsvg2-dev"
+        }
         puts stderr "shtmlview: Markdown and HTML file viewer\n"
         puts stderr "Usage as application: $::argv0 \[OPTION\] \[FILENAME\]\n"
         puts stderr "  FILENAME: HTML file or Markdown file"
@@ -3482,6 +3490,9 @@ if {[info exists argv0] && [info script] eq $argv0} {
         puts stderr "  shtmlview::shtmlview .help"
         puts stderr "  .help browse filename"
         puts stderr "  pack .help -fill both -expand true\n"
+        puts stderr "File support:"
+        puts stderr "    Markdown    : $md"
+        puts stderr "    SVG-support : $svg"
         exit 1
     }
     proc atExit {} {
